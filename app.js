@@ -21,3 +21,10 @@ function drawCross(x, y) {
   line2.style.top = y + "px";
   document.body.appendChild(line2);
 }
+
+
+const container = document.querySelector(".container");
+
+container.addEventListener("click", e=>{
+  drawCross(e.x,e.y);
+})
